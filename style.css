@@ -123,10 +123,10 @@ article {
   height: 4px;
   background: linear-gradient(
     45deg,
-    #f09433 60%,
-    #e6683c 70%,
-    #dc2743 80%,
-    #cc2366 90%,
+    #f09433 20%,
+    #e6683c 40%,
+    #dc2743 60%,
+    #cc2366 80%,
     #bc1888 100%
   );
   border-top-left-radius: 5px;
