@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | [Social media dashboard with theme switcher]
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-title">
+        <h1>Social Media Dashboard</h1>
+        <h2>Total Followers: 23,004</h2>
+      </div>
+      <div class="nav-buttons">
+        <p>Dark Mode</p>
+        <div class="active" id="toggle-btn" onclick="handleThemeSwitcher()">
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+    </header>
+    <article>
+      <section class="grid-user-cards">
+        <div class="user-card">
+          <div class="user-card-title">
+            <img src="./images/icon-facebook.svg" alt="social-media" />
+            <p>@nathanf</p>
+          </div>
+          <div class="user-card-content">
+            <h1>1987</h1>
+            <h2>Followers</h2>
+            <div class="up-down-content">
+              <img src="./images/icon-up.svg" alt="" />
+              <p>12 Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-card-title">
+            <img src="./images/icon-twitter.svg" alt="social-media" />
+            <p>@nathanf</p>
+          </div>
+          <div class="user-card-content">
+            <h1>1044</h1>
+            <h2>Followers</h2>
+            <div class="up-down-content">
+              <img src="./images/icon-up.svg" alt="" />
+              <p>99 Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-card-title">
+            <img src="./images/icon-instagram.svg" alt="social-media" />
+            <p>@realnathanf</p>
+          </div>
+          <div class="user-card-content">
+            <h1>11k</h1>
+            <h2>Followers</h2>
+            <div class="up-down-content">
+              <img src="./images/icon-up.svg" alt="" />
+              <p>1099 Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-card">
+          <div class="user-card-title">
+            <img src="./images/icon-youtube.svg" alt="social-media" />
+            <p>Nathan F.</p>
+          </div>
+          <div class="user-card-content">
+            <h1>8239</h1>
+            <h2>Subscribers</h2>
+            <div class="up-down-content">
+              <img src="./images/icon-down.svg" alt="" />
+              <p>144 Today</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Overview section -->
+      <section>
+        <h1 class="overview-title">Overview - Today</h1>
+        <div class="grid-overview">
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Page Views</p>
+              <img src="./images/icon-facebook.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>87</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>3%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Likes</p>
+              <img src="./images/icon-facebook.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>52</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-down.svg" alt="" />
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Likes</p>
+              <img src="./images/icon-instagram.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>5462</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>2257%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Profile Views</p>
+              <img src="./images/icon-instagram.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>52k</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>1375%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>117</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>303%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Likes</p>
+              <img src="./images/icon-twitter.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>507</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-up.svg" alt="" />
+                <p>553%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Likes</p>
+              <img src="./images/icon-youtube.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>107</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-down.svg" alt="" />
+                <p>19%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="overview-card-top">
+              <p>Total Views</p>
+              <img src="./images/icon-youtube.svg" alt="social-media" />
+            </div>
+            <div class="overview-card-bottom">
+              <h1>1407</h1>
+              <div class="up-down-content">
+                <img src="./images/icon-down.svg" alt="" />
+                <p>12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </article>
+  </body>
+  <script>
+    const root = document.documentElement;
+    var toggleBtn = document.getElementById("toggle-btn");
+
+    function handleThemeSwitcher() {
+      toggleBtn.classList.toggle("active");
+      if (toggleBtn.className == "active") {
+        root.style.setProperty("--bg-body", "hsl(0, 0%, 100%)");
+        root.style.setProperty("--top-bg-pattern", "hsl(225, 100%, 98%)");
+        root.style.setProperty("--card-bg", "hsl(227, 47%, 96%)");
+        root.style.setProperty("--text-secondary", "hsl(228, 12%, 44%)");
+        root.style.setProperty("--text-primary", "hsl(230, 17%, 14%)");
+        root.style.setProperty("--text-tertiary", "hsl(228, 12%, 44%)");
+        root.style.setProperty("--hover-card", "hsl(227, 47%, 90%)");
+      } else {
+        root.style.setProperty("--bg-body", "hsl(230, 17%, 14%)");
+        root.style.setProperty("--top-bg-pattern", "hsl(232, 19%, 15%)");
+        root.style.setProperty("--card-bg", "hsl(228, 28%, 20%)");
+        root.style.setProperty("--text-secondary", "hsl(228, 34%, 66%)");
+        root.style.setProperty("--text-primary", "hsl(0, 0%, 100%)");
+        root.style.setProperty("--text-tertiary", "hsl(0, 0%, 100%)");
+        root.style.setProperty("--hover-card", "hsl(228, 28%, 26%)");
+      }
+    }
+  </script>
+</html>
