@@ -116,7 +116,22 @@ article {
 }
 
 .user-card:nth-child(3) {
-  border-top: 4px solid linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  padding-top: 0;
+}
+
+.border-top-gradient {
+  height: 4px;
+  background: linear-gradient(
+    45deg,
+    #f09433 60%,
+    #e6683c 70%,
+    #dc2743 80%,
+    #cc2366 90%,
+    #bc1888 100%
+  );
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 1.5em;
 }
 
 .user-card:nth-child(4) {
